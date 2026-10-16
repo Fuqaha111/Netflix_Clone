@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 body {
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #000;
     color: #fff;
 }
@@ -57,11 +58,12 @@ button{
     transform: translate(-50%, -50%);
     text-align: center;
 }
-h1 {
+.middle-of-page h1 {
     font-size: 50px;
     line-height: 70px;
     font-weight: 600;
     max-width: 650px;
+    margin-bottom: 20px;
 
 }
 p{
@@ -81,4 +83,35 @@ p{
      border: 0;
      font-size: 16px;
      padding: 10px;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding: 100px 12%;
+}
+.card img{
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid white;
+}
+.text{
+    flex: 1;
+    min-width: 300px;
+    max-width: 700px;
+}
+
+.text p {
+    line-height: 1.6;
+    color: #ccc;
+}
+.text h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.card + .card {
+    border-top: 2px solid #333;
 }
