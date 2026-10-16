@@ -114,4 +114,8 @@ p{
 }
 .card + .card {
     border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+}
+.header + .card{
+    border-top: 2px solid #333;
 }
